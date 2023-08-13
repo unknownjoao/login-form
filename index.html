@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="" />
+    </header>
+
+    <div class="login-form">
+      <div class="header-form">
+        <div class="title-login">
+          <img src="./images/log-in.svg" alt="" />
+          <h1>Faça seu login</h1>
+        </div>
+        <p>Entre com suas informações de cadastro.</p>
+      </div>
+      <form action="">
+        <div class="input-with-icon-email">
+          <label for="email">
+            <img
+              src="/images/mail.svg"
+              alt=""
+              class="input-icon-email"
+              id="default-icon-email"
+            />
+            <img
+              src="/images/mail-focus.svg"
+              alt=""
+              class="input-icon-email"
+              id="focus-icon-email"
+              style="display: none"
+            />
+            E-mail </label
+          ><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            onfocus="toggleIcon('focus-icon-email', 'default-icon-email')"
+            onblur="toggleIcon('default-icon-email', 'focus-icon-email')"
+          /><br />
+        </div>
+
+        <div class="input-with-icon-pass">
+          <label for="password">
+            <img
+              src="/images/lock.svg"
+              alt="icone normal cadeado"
+              class="input-icon-pass"
+              id="default-icon-password"
+            />
+            <img
+              src="/images/lock-focus.svg"
+              alt="icone amarelo cadeado"
+              class="input-icon-pass"
+              id="focus-icon-password"
+              style="display: none"
+            />
+            Senha </label
+          ><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite sua senha"
+            onfocus="toggleIcon('focus-icon-password', 'default-icon-password')"
+            onblur="toggleIcon('default-icon-password', 'focus-icon-password')"
+          />
+        </div>
+        
+        <div class="check-remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Lembre-me</label>
+          <a href="#" id="forget-pass">Esqueci minha senha</a>
+        </div>
+
+        <button type="submit">Entrar</button>
+        
+        <div class="havent-account">
+          <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div class="side-image">
+      <img src="/images/side-image.jpg" alt="" />
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>

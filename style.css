@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+/* Variáveis */
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  background-color: var(--background);
+}
+
+/* Header */
+header {
+  margin: 40px 70px;
+}
+
+/* Typography */
+h1 {
+  color: var(--text-title);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+p,
+label {
+  color: var(--text-base);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Login Form */
+.login-form {
+  width: 550px;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  padding: 61px 119px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  margin: 0 150px;
+  background-color: var(--form-background);
+}
+
+.login-form input:not(#remember) {
+  width: 100%;
+  padding: 10px 10px 10px 37px;
+  color: var(--text-base);
+  border: 1px solid var(--text-base);
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 44px;
+}
+
+.login-form input:focus:not(input[type="checkbox"]) {
+  outline: 1px solid #ffc632;
+  border-color: #ffc632;
+  box-shadow: 0px 0px 0px 2px #FFDE88;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px 24px;
+  color: var(--form-background);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.27px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.login-form button:hover{
+  background-color: #f7e0a8;
+}
+
+/* Title and Description */
+.title-login {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.header-form p {
+  margin-bottom: 27px;
+}
+
+/* Checkbox and Remember Me */
+.check-remember {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-remember label {
+  flex: 1;
+}
+
+.check-remember a {
+  color: var(--primary-color);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+/* Inputs with Icons */
+.input-with-icon-email,
+.input-with-icon-pass {
+  position: relative;
+}
+
+.input-icon-pass {
+  position: absolute;
+  top: 53%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  /* Ajuste o tamanho da imagem conforme necessário */
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.input-with-icon-email input[type="email"],
+.input-with-icon-pass input[type="password"] {
+  padding-right: 30px;
+  /* Espaço para o ícone */
+}
+
+.input-with-icon-email .input-icon-email {
+  position: absolute;
+  top: 53%;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 20px;
+  /* Ajuste o tamanho da imagem conforme necessário */
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.input-icon-pass {
+  color: #ffc632;
+}
+
+/* Checkboxes */
+.check-remember input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.check-remember input[type="checkbox"]:checked {
+  background-color: #ffc632;
+  border-color: #ffc632;
+  background-image: url(./images/check.svg);
+  background-position: center;
+}
+
+.check-remember a:hover {
+  color: #f7e0a8;
+}
+
+
+/* Side Image */
+.side-image img {
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+
+/* Input Icon */
+.input-icon-email {
+  position: absolute;
+  top: 35%;
+  margin-left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+/* Haven't Account */
+.havent-account {
+  display: flex;
+  justify-content: center;
+}
+
+.havent-account p,
+.havent-account a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.havent-account a:hover {
+  color: #f7e0a8;
+}
+
+/* MEDIA QUERIES */
+
